@@ -4,7 +4,7 @@ $chute = 0;
 $tentativas = 1;
 $pontuação = 10;
 
-print ("");
+print("");
 
 $intervalo1 = (int) readline("Digite um número menor para o intervalo: ");
 $intervalo2 = (int) readline("Digite um número maior para o intervalo: ");
@@ -28,8 +28,8 @@ while ($chute != $sorteado) {
             print("Valor muito baixo \n");
         }
     }
-    if ($tentativas >= 10){
-        print ("Você perdeu o jogo, tente novamente mais tarde!!!");
-        
+    if ($tentativas > 10) {
+        print("Você perdeu o jogo, tente novamente mais tarde!!!");
+        break;
     }
 }
