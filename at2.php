@@ -16,8 +16,10 @@ while ($chute != $sorteado) {
     $chute = (int) readline("Digite um número: ");
 
     if ($chute == $sorteado) {
+        $pontuação = $pontuação - $tentativas;
         print("Você venceu!!! \n");
         print("Número de tentativas:$tentativas \n");
+        print("Você fez:$pontuação pontos!!! \n");
     } else {
 
         ++$tentativas;
